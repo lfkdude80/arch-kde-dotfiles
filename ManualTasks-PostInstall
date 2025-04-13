@@ -1,0 +1,92 @@
+# Manual Configuration Tasks (Post-Installation) for Arch Linux
+
+## System Overview:
+- **OS**: Arch Linux x86_64
+- **Kernel**: Linux 6.13.7-hardened1-1-hardened
+- **Window Manager**: KWin (with Krohnkite for window tiling)
+- **Desktop Environment**: Plasma 6.3.4
+- **Terminal**: Alacritty
+- **Shell**: Zsh 5.9 with Oh My Zsh, Powerlevel10k, zsh-autosuggestions, zsh-syntax-highlighting
+- **Packages**:
+    - Brave
+    - Code OSS
+    - VLC
+    - Balena Etcher
+    - Ventoy
+    - Gparted
+    - Thunar
+    - Python
+    - Obsidian
+    - VirtualBox
+- **Font**: MesloLG Nerd Font (also installed: JetBrains Mono, Iosevka, FiraCode, Hack, Monofur, Spacemono)
+- **Swap**: 2GB swap file (not partition)
+- **Display Manager**: SDDM
+
+---
+
+## Post-Install Tasks
+
+### 1. **KDE Plasma Settings:**
+   - **Global Theme**: WhiteSur Dark
+   - **Window Decoration**: WhiteSur-Dark
+   - **Plasma Style**: Gently
+   - **Colors**: WhiteSur-Dark
+   - **Icons**: WhiteSur (with backups: Papirus, Kora, Tela, Nordic)
+   - **Application Style**: Breeze
+   - **KDE Plasma Launcher**: Application Menu with Arch Linux icon
+   - **Text Editor**: KWrite / Kate
+   - **Wallpaper**: Nordic-mountain-wallpaper
+
+### 2. **KWin Window Management (Tiling & Gaps):**
+   - **Krohnkite Plugin**: Installed and edited for window tiling
+   - **Window Gaps**: Set all gaps to 10 pixels (in Geometry tab)
+   - **Virtual Desktops**: 5 desktops enabled
+
+### 3. **Mirror & System Update:**
+   - **Mirror Update Command**:
+     ```
+     sudo reflector --country 'United States' --latest 10 --fastest 10 --protocol https --save /etc/pacman.d/mirrorlist
+     sudo pacman -Syyu
+     ```
+
+### 4. **Terminal Setup:**
+   - **Zsh**: Default shell (`chsh -s /bin/zsh`)
+   - **Oh My Zsh**: Installed and configured
+   - **Powerlevel10k**: Theme for Zsh prompt
+   - **Font**: NerdFonts (SauceCodePro) for a better terminal experience
+   - **Additional Packages**:
+     - `neofetch`: For system info in terminal
+     - `zsh-autosuggestions`: Autocompletion based on history
+     - `zsh-syntax-highlighting`: Syntax highlighting in Zsh
+   - **Terminal Emulator**: Alacritty (set as default)
+   - **Backup Terminal**: Konsole (in case needed)
+
+### 5. **System Setup:**
+   - **Packages Installed**:
+     - `Brave` (browser)
+     - `Code OSS` (editor)
+     - `VLC` (media player)
+     - `Balena Etcher` (USB burner)
+     - `Ventoy` (ISO bootable tool)
+     - `Gparted` (partition manager)
+     - `Thunar` (file manager)
+     - `Python` (programming language)
+     - `Obsidian` (note-taking)
+     - `VirtualBox` (virtualization software)
+   - **Swap Setup**: 2GB swap file
+   - **Additional AUR Packages**: Installed via Yay helper
+
+### 6. **Other Important Notes:**
+   - **Display Server**: Xorg (X11)
+   - **Font Setup**: MesloLG (also installed JetBrains Mono, Hack, Iosevka, FiraCode, and others)
+   - **Backup Text Editor**: Kate
+   - **Startup Applications**: Set apps to start with system as needed
+   - **Other Customization**: Set Konsole to use custom profile (e.g., font size, transparency, colors)
+
+---
+
+Feel free to tweak and add anything specific to your setup, but this should cover the major steps you've taken. This file will help you quickly replicate your environment on a new machine or after reinstalling your current system.
+
+---
+
+Would you like me to help with any other parts of your dotfiles repo, or assist with any additional tasks? Just let me know!
