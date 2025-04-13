@@ -1,6 +1,6 @@
-# 🎩 lfkdude80’s KDE Plasma Dotfiles
+# 🎩 lfkdude80’s KDE Plasma Post-Installation Customization Guide
 
-Welcome to my custom Arch + KDE Plasma setup! This repo contains everything you need to replicate my environment, including:
+Welcome to my custom Arch + KDE Plasma setup! I suggest downloading the ALCI ISO Hardened from this site: https://alci.online/download-or-build/ and install it via USB or in your favorite virtual machine. This GitHub repo contains everything you need to replicate my environment, including:
 - Terminal-based post-install script
 - Manually applied GUI tweaks
 - Nerd Fonts setup
@@ -25,7 +25,7 @@ Welcome to my custom Arch + KDE Plasma setup! This repo contains everything you 
 
 ### 🔁 Update Mirrors & System
 
-On a fresh install, start with the basics:
+After a clean installation, start with these commands FIRST:
 
 ```bash
 sudo pacman -Syu reflector --noconfirm
@@ -48,6 +48,8 @@ Recommended Fonts:
 - • SpaceMono
 
 Once downloaded:
+- • Find the .ttf files and move them into the right folder, probably ~/.local/share/fonts .
+- • Additionally, you can move them with the commands below. Double check the path for the .ttf files first.
 ```bash
 mkdir -p ~/.local/share/fonts
 mv ~/Downloads/*.ttf ~/.local/share/fonts/
@@ -87,7 +89,7 @@ Now that your apps and shell are set up, it's time to polish the system using KD
 - • Save layout via KDE settings if desired
 
 ### 🎨 Themes & Appearance
-Go to `System Settings → Appearance` and apply:
+Go to `System Settings → Appearance & Style` and click the Get New button. Download and apply these:
 - • **Global Theme:** `WhiteSur Dark`
 - • **Plasma Style:** `Gently`
 - • **Application Style:** `Breeze`
@@ -100,9 +102,14 @@ Go to `System Settings → Appearance` and apply:
 - • Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
 - • Adjust font hinting/anti-aliasing for your display
 
+### 🚀 Application Launcher
+- • Left click and select Show Alternatives
+- • Select Application Menu
+- • Change the icon to the Arch Linux icon
+
 ### 🌐 Default Applications
 - • Set **Brave** as your browser
-- • Choose your terminal of choice (e.g. Konsole, Kitty, or Alacritty)
+- • Choose your terminal of choice (I use either Konsole or Alacritty)
 
 ---
 
@@ -111,6 +118,7 @@ Go to `System Settings → Appearance` and apply:
 - • After script completion, restart the terminal for Zsh changes to take effect.
 - • `neofetch` is added to your `.zshrc` for fun.
 - • Use `yay` for installing additional AUR packages.
+- • Either log out and back in, or reboot your computer just for good measure.
 
 ---
 
