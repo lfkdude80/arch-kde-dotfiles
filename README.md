@@ -1,3 +1,8 @@
+![Desktop Screenshot](images/desktop1.png)
+![Two Windows](images/desktop1-2windows.png)
+![Terminal Screenshot](images/desktop1-terminal.png)
+![App Launcher](images/desktop1-applauncher.png)
+
 # Dotfiles
 
 Personal dotfiles for lfkdude80's Linux setup.
