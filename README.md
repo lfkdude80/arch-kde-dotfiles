@@ -1,7 +1,7 @@
-![Desktop Screenshot](images/desktop1.png)
-![Two Windows](images/desktop1-2windows.png)
-![Terminal Screenshot](images/desktop1-terminal.png)
-![App Launcher](images/desktop1-applauncher.png)
+![Desktop Screenshot](screenshots/desktop1.png)
+![Two Windows](screenshots/desktop1-2windows.png)
+![Terminal Screenshot](screenshots/desktop1-terminal.png)
+![App Launcher](screenshots/desktop1-applauncher.png)
 
 # Dotfiles
 
