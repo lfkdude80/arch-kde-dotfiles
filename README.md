@@ -1,4 +1,4 @@
-# 🎩 Rob’s KDE Plasma Dotfiles
+# 🎩 lfkdude80’s KDE Plasma Dotfiles
 
 Welcome to my custom Arch + KDE Plasma setup! This repo contains everything you need to replicate my environment, including:
 - Terminal-based post-install script
