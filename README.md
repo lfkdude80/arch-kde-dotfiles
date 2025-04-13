@@ -30,7 +30,7 @@ After a clean installation, start with these commands FIRST:
 ```bash
 sudo pacman -Syu reflector --noconfirm
 sudo reflector --country 'United States' --latest 10 --fastest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-sudo pacman -Syu --noconfirm
+sudo pacman -Syyu --noconfirm
 ```
 
 ### 🕋️ Nerd Fonts (Powerlevel10k + Terminal Icons)
