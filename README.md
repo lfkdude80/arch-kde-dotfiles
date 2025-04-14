@@ -120,12 +120,14 @@ This script updates the system, installs all of my core terminal tools, Zsh, AUR
 Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings GUI app. Everything should be findable via Get New button on the upper right hand side of the window or found by searching. The Nordic mountain wallpaper is downloadable from the top of this page.
 
 ### Krohnkite Tiling
+- Go into System Settings > Window Management > Kwin Scripts
+- Click on the Get New button, install Krohnkite, and go into its settings
 - Disable **Monocle Layout**
 - Set **Outer/Inner Gaps** to `10px`
 - Save layout via KDE settings if desired
 
 ### Themes & Appearance
-Go to `System Settings → Appearance & Style` and click the Get New button. Download and apply these:
+Go to `System Settings → Appearance & Style` and click the Get New button. Download and install these:
 - **Global Theme:** `WhiteSur Dark`
 - **Plasma Style:** `Gently`
 - **Application Style:** `Breeze`
@@ -135,8 +137,7 @@ Go to `System Settings → Appearance & Style` and click the Get New button. Dow
 - Optional wallpaper: `Nordic Mountain`
 
 ### Fonts
-- Set your default font to your chosen Nerd Font (I like FiraCode)
-- Adjust font hinting/anti-aliasing for your display
+- Set your default font in System Settings to your downloaded Nerd Font (I like FiraCode)
 
 ---
 
