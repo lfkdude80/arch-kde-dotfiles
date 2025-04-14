@@ -103,8 +103,8 @@ Go to `System Settings → Appearance & Style` and click the Get New button. Dow
 - **Window Decorations:** `WhiteSur-Dark`
 - Optional wallpaper: `Nordic Mountain`
 
-### Fonts (GUI Side)
-- Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
+### Fonts
+- Set your default font to your chosen Nerd Font (I use FiraCode mostly)
 - Adjust font hinting/anti-aliasing for your display
 
 ---
