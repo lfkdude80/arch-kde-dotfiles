@@ -117,7 +117,7 @@ Open your terminal. Zsh will launch by default. If Powerlevel10k prompts you wit
 
 Clone the dotfiles repo (if not already):
 ```bash
-git clone [https://github.com/lfkdude80/arch-kde-dotfiles.git]
+git clone https://github.com/lfkdude80/arch-kde-dotfiles.git
 cd arch-kde-dotfiles
 ```
 Copy the Configuration Files
