@@ -9,7 +9,7 @@
 - **Shell**: Zsh 5.9 with Oh My Zsh, Powerlevel10k, zsh-autosuggestions, zsh-syntax-highlighting
 - **Packages**:
     - Brave
-    - Code OSS
+    - VS Code
     - VLC
     - Balena Etcher
     - Ventoy
@@ -77,7 +77,7 @@
    - **Additional AUR Packages**: Installed via Yay helper
 
 ### 6. **Other Important Notes:**
-   - **Display Server**: Xorg (X11)
+   - **Display Server**: Wayland
    - **Font Setup**: MesloLG (also installed JetBrains Mono, Hack, Iosevka, FiraCode, and others)
    - **Backup Text Editor**: Kate
    - **Startup Applications**: Set apps to start with system as needed
