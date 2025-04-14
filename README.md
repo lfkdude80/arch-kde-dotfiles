@@ -87,7 +87,7 @@ This script updates the system, installs all of my core terminal tools, Zsh, AUR
 
 ## 3. Manual GUI Configuration
 
-Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings GUI app. Everything should be findable via Get New button on the upper right hand side of the window or found by searching. 
+Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings GUI app. Everything should be findable via Get New button on the upper right hand side of the window or found by searching. The Nordic mountain wallpaper is downloadable from the top of this page.
 
 ### Krohnkite Tiling
 - Disable **Monocle Layout**
