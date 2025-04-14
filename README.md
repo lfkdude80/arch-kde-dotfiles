@@ -64,6 +64,34 @@ mkdir ~/arch-kde-dotfiles
 cd ~/arch-kde-dotfiles
 chmod +x post-install.sh
 ```
+## Applications and Extras Installed
+
+This script will install the following applications and packages:
+
+- **Zsh** - A powerful shell for interactive use.
+- **Oh My Zsh** - A framework for managing Zsh configurations.
+- **Powerlevel10k** - A fast and feature-rich theme for Zsh.
+- **Neofetch** - A system information tool for displaying a quick summary of system info.
+- **zsh-syntax-highlighting** - A plugin for highlighting command syntax in Zsh.
+- **zsh-autosuggestions** - A plugin that suggests commands as you type.
+- **Yay** - An AUR helper for easily installing packages from the AUR.
+- **Git** - A distributed version control system.
+- **Brave** - A privacy-focused web browser.
+- **Visual Studio Code** - A source-code editor with support for development tools and extensions.
+- **VLC** - A versatile media player for almost any type of media file.
+- **Balena Etcher** - A tool for flashing OS images to SD cards or USB drives.
+- **Ventoy** - A tool to create bootable USB drives for multiple OS images.
+- **Gparted** - A GUI-based partition editor.
+- **Thunar** - A lightweight file manager.
+- **Python** - A programming language.
+- **Obsidian** - A knowledge management and note-taking app.
+- **VirtualBox** - A virtualization software for running multiple operating systems.
+
+### Installation Duration
+
+Please note that depending on your internet speed and system performance, the installation process may take some time, as several applications and dependencies will be downloaded. Be patient and let the script run until completion!
+
+
 ### Disclaimer: Swap File Setup
 This script automatically creates a 2GB swap file to give your system a little extra snappiness — perfect for when memory gets tight or you're running heavier apps on older hardware.
 
