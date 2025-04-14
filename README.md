@@ -86,6 +86,8 @@ This script will install the following applications and packages:
 - **Python** - A programming language.
 - **Obsidian** - A knowledge management and note-taking app.
 - **VirtualBox** - A virtualization software for running multiple operating systems.
+- **Docker** - A platform to develop, ship, and run applications inside containers.
+- **DB Browser for SQLite** - A high-quality, visual, and user-friendly database management tool for SQLite databases.
 
 ### Installation Duration
 
