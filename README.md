@@ -17,6 +17,7 @@ Welcome to my custom Arch + KDE Plasma setup! I suggest downloading the ALCI ISO
   <img src="screenshots/desktop1-2windows.png" width="700"/>
   <img src="screenshots/desktop1-terminal.png" width="700"/>
   <img src="screenshots/desktop1-applauncher.png" width="700"/>
+  <img src="screenshots/desktop1-applauncher2.png" width="700"/>
 </p>
 
 ---
