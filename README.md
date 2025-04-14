@@ -102,10 +102,15 @@ Go to `System Settings → Appearance & Style` and click the Get New button. Dow
 - • Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
 - • Adjust font hinting/anti-aliasing for your display
 
-### 🚀 Application Launcher
+### 🚀 Application Launcher on the KDE panel
 - • Left click and select Show Alternatives
 - • Select Application Menu
 - • Change the icon to the Arch Linux icon
+
+### 🚀 Application Launcher desktop widget
+- • Download the Simple Application Launcher widget 
+- • Right-clicking the panel > Add or Manage Widgets
+- • Add to the bottom right side of the desktop and shape accordingly
 
 ### 🌐 Default Applications
 - • Set **Brave** as your browser
