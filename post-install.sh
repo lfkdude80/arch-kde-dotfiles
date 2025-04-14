@@ -16,7 +16,9 @@ sudo pacman -S --noconfirm \
   base-devel \
   wget \
   unzip \
-  neofetch
+  neofetch \
+  docker \
+  sqlitebrowser \
 
 echo "Installing Zsh tools..."
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
