@@ -117,8 +117,8 @@ Open your terminal. Zsh will launch by default. If Powerlevel10k prompts you wit
 
 Clone the dotfiles repo (if not already):
 ```bash
-git clone https://github.com/YOURUSERNAME/dotfiles.git
-cd dotfiles
+git clone [https://github.com/lfkdude80/arch-kde-dotfiles.git]
+cd arch-kde-dotfiles
 ```
 Copy the Configuration Files
 You can copy the Zsh configuration files using one of two methods:
@@ -127,6 +127,7 @@ Option 1: Quick Copy in the Terminal
 ```bash
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
+cp /.config/neofetch/config.conf ~/.config/neofetch
 ```
 
 Option 2: Manual Copy with Nano
