@@ -54,5 +54,5 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 echo "/swapfile none swap sw 0 0" | sudo tee -a /etc/fstab
 
-echo "🎉 All done! Restart your terminal for changes to take effect."
+echo "🎉 All done! Reboot recommended."
 
