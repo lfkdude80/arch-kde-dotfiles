@@ -110,29 +110,42 @@ Go to `System Settings → Appearance & Style` and click the Get New button. Dow
 ---
 
 ### Launch Zsh & Apply Your Dotfiles
-
 Once the script finishes running:
 
-1. **Open your terminal.**  
-   Zsh will launch by default. If Powerlevel10k prompts you with its configuration wizard, feel free to **exit** or skip — you’ll be applying your own settings in a moment.
+Open your terminal. Zsh will launch by default. If Powerlevel10k prompts you with its configuration wizard, feel free to exit or skip — you’ll be applying your own settings in a moment.
 
-2. **Clone your dotfiles repo (if not already):**
+Clone your dotfiles repo (if not already):
+```bash
+git clone https://github.com/YOURUSERNAME/dotfiles.git
+cd dotfiles
+```
+Copy Your Configuration Files
+You can copy your Zsh configuration files using one of two methods:
 
-   ```bash
-   git clone https://github.com/YOURUSERNAME/dotfiles.git
-   cd dotfiles
-
-
-### Copy Your Configuration Files either manually or in the terminal
-
+Option 1: Quick Copy in the Terminal
 ```bash
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
+```
 
-### Apply the changes by reloading Zsh config
+Option 2: Manual Copy with Nano
+Open each file in nano, then copy and paste the contents manually.
+```bash
+nano ~/.zshrc
+```
+
+Then open your local .zshrc from the dotfiles folder in a second terminal window or text editor, copy the contents, and paste them into nano.
+
+Repeat the same process for .p10k.zsh:
+```bash
+nano ~/.p10k.zsh
+```
+Once done, save and exit (CTRL + O, then Enter, then CTRL + X).
+
+Apply the Changes by Reloading Zsh Config
 ```bash
 source ~/.zshrc
-
+```
 ---
 
 ### Application Launcher on the KDE panel
@@ -163,4 +176,3 @@ source ~/.zshrc
 ## Final Result
 
 A fast, clean, keyboard-friendly KDE environment tuned for development, productivity, and aesthetics.
-
