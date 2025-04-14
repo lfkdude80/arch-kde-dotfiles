@@ -1,4 +1,4 @@
-# 🎩 lfkdude80’s KDE Plasma Post-Installation Customization Guide
+# lfkdude80’s KDE Plasma Post-Installation Customization Guide
 
 Welcome to my custom Arch + KDE Plasma setup! I suggest downloading the ALCI ISO Hardened from this site: https://alci.online/download-or-build/ and install it via USB or in your favorite virtual machine. This GitHub repo contains everything you need to replicate my environment, including:
 - Terminal-based post-install script
@@ -6,11 +6,11 @@ Welcome to my custom Arch + KDE Plasma setup! I suggest downloading the ALCI ISO
 - Nerd Fonts setup
 - My preferred apps and appearance settings
 
-> 🧠 This guide is step-by-step. Follow each phase **in order** for best results.
+> This guide is step-by-step. Follow each phase **in order** for best results.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <p align="center">
   <img src="screenshots/desktop1.png" width="700"/>
@@ -22,9 +22,9 @@ Welcome to my custom Arch + KDE Plasma setup! I suggest downloading the ALCI ISO
 
 ---
 
-## 🥉 1. Pre-Install Manual Setup (Important!)
+## 1. Pre-Install Manual Setup (Important!)
 
-### 🔁 Update Mirrors & System
+### Update Mirrors & System
 
 After a clean installation, start with these commands FIRST:
 
@@ -34,43 +34,47 @@ sudo reflector --country 'United States' --latest 10 --fastest 10 --protocol htt
 sudo pacman -Syyu --noconfirm
 ```
 
-### 🕋️ Nerd Fonts (Powerlevel10k + Terminal Icons)
+### Nerd Fonts (Powerlevel10k + Terminal Icons)
 
 Manually download the following fonts from:  
 👉 [https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
 
 Recommended Fonts:
-- • FiraCode
-- • JetBrainsMono
-- • SauceCodePro
-- • Hack
-- • MesloLGL
-- • Monofur
-- • SpaceMono
+- FiraCode
+- JetBrainsMono
+- SauceCodePro
+- Hack
+- MesloLGL
+- Monofur
+- SpaceMono
 
 Once downloaded:
-- • Find the .ttf files and move them into the right folder, probably ~/.local/share/fonts .
-- • Additionally, you can move them with the commands below. Double check the path for the .ttf files first.
+- Find the .ttf files and move them into the right folder, probably ~/.local/share/fonts .
+- Additionally, you can move them with the commands below. Double check the path for the .ttf files first.
 ```bash
 mkdir -p ~/.local/share/fonts
 mv ~/Downloads/*.ttf ~/.local/share/fonts/
 fc-cache -fv
 ```
 
-### 🛠️ Make the Script Executable
+### Make the Script Executable
 
 ```bash
 cd ~/dotfiles
 chmod +x post-install.sh
 ```
+### Disclaimer: Swap File Setup
+This script automatically creates a 2GB swap file to give your system a little extra snappiness — perfect for when memory gets tight or you're running heavier apps on older hardware.
+
+Swap is enabled immediately and added to /etc/fstab so it stays active after reboot.
 
 ---
 
-## 🧪 2. Run the Post-Install Script
+## 2. Run the Post-Install Script
 
 This script installs all my core terminal tools, Zsh config, AUR apps, and more.
 
-### ▶️ Run it:
+### Run it:
 
 ```bash
 ./post-install.sh
@@ -80,55 +84,83 @@ This script installs all my core terminal tools, Zsh config, AUR apps, and more.
 
 ---
 
-## 🖼️ 3. Manual GUI Configuration
+## 3. Manual GUI Configuration
 
 Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings.
 
-### 🧱 Krohnkite Tiling
-- • Disable **Monocle Layout**
-- • Set **Outer/Inner Gaps** to `10px`
-- • Save layout via KDE settings if desired
+### Krohnkite Tiling
+- Disable **Monocle Layout**
+- Set **Outer/Inner Gaps** to `10px`
+- Save layout via KDE settings if desired
 
-### 🎨 Themes & Appearance
+### Themes & Appearance
 Go to `System Settings → Appearance & Style` and click the Get New button. Download and apply these:
-- • **Global Theme:** `WhiteSur Dark`
-- • **Plasma Style:** `Gently`
-- • **Application Style:** `Breeze`
-- • **Colors:** `WhiteSur-Dark`
-- • **Icons:** `WhiteSur`
-- • **Window Decorations:** `WhiteSur-Dark`
-- • Optional wallpaper: `Nordic Mountain`
+- **Global Theme:** `WhiteSur Dark`
+- **Plasma Style:** `Gently`
+- **Application Style:** `Breeze`
+- **Colors:** `WhiteSur-Dark`
+- **Icons:** `WhiteSur`
+- **Window Decorations:** `WhiteSur-Dark`
+- Optional wallpaper: `Nordic Mountain`
 
-### 🔤 Fonts (GUI Side)
-- • Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
-- • Adjust font hinting/anti-aliasing for your display
-
-### 🚀 Application Launcher on the KDE panel
-- • Left click and select Show Alternatives
-- • Select Application Menu
-- • Change the icon to the Arch Linux icon
-
-### 🚀 Application Launcher desktop widget
-- • Download the Simple Application Launcher widget 
-- • Right-clicking the panel > Add or Manage Widgets
-- • Add to the bottom right side of the desktop and shape accordingly
-
-### 🌐 Default Applications
-- • Set **Brave** as your browser
-- • Choose your terminal of choice (I use either Konsole or Alacritty)
+### Fonts (GUI Side)
+- Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
+- Adjust font hinting/anti-aliasing for your display
 
 ---
 
-## 🪼 Notes & Cleanup
+### Launch Zsh & Apply Your Dotfiles
 
-- • After script completion, restart the terminal for Zsh changes to take effect.
-- • `neofetch` is added to your `.zshrc` for fun.
-- • Use `yay` for installing additional AUR packages.
-- • Either log out and back in, or reboot your computer just for good measure.
+Once the script finishes running:
+
+1. **Open your terminal.**  
+   Zsh will launch by default. If Powerlevel10k prompts you with its configuration wizard, feel free to **exit** or skip — you’ll be applying your own settings in a moment.
+
+2. **Clone your dotfiles repo (if not already):**
+
+   ```bash
+   git clone https://github.com/YOURUSERNAME/dotfiles.git
+   cd dotfiles
+
+
+### Copy Your Configuration Files either manually or in the terminal
+
+```bash
+cp .zshrc ~/.zshrc
+cp .p10k.zsh ~/.p10k.zsh
+
+### Apply the changes by reloading Zsh config
+```bash
+source ~/.zshrc
 
 ---
 
-## ✅ Final Result
+### Application Launcher on the KDE panel
+- Left click and select Show Alternatives
+- Select Application Menu
+- Change the icon to the Arch Linux icon
+
+### Application Launcher desktop widget
+- Download the Simple Application Launcher widget 
+- Right-clicking the panel > Add or Manage Widgets
+- Add to the bottom right side of the desktop and shape accordingly
+
+### Default Applications
+- Set **Brave** as your browser
+- Choose your terminal of choice (I use either Konsole or Alacritty)
+
+---
+
+## Notes & Cleanup
+
+- After script completion, restart the terminal for Zsh changes to take effect.
+- `neofetch` is added to the top of your `.zshrc` file.
+- Use `yay` for installing additional AUR packages.
+- Either log out and back in, or reboot your computer just for good measure.
+
+---
+
+## Final Result
 
 A fast, clean, keyboard-friendly KDE environment tuned for development, productivity, and aesthetics.
 
