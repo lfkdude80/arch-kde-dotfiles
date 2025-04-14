@@ -57,10 +57,11 @@ mv ~/Downloads/*.ttf ~/.local/share/fonts/
 fc-cache -fv
 ```
 
-### Make the Script Executable
-
+### Create a Folder & Make the Script Executable
+Create a folder in your ~/ directory and call it "arch-kde-dotfiles". Download the script and any configurations you want to use and place them in that folder.
 ```bash
-cd ~/dotfiles
+mkdir ~/arch-kde-dotfiles
+cd ~/arch-kde-dotfiles
 chmod +x post-install.sh
 ```
 ### Disclaimer: Swap File Setup
@@ -72,7 +73,7 @@ Swap is enabled immediately and added to /etc/fstab so it stays active after reb
 
 ## 2. Run the Post-Install Script
 
-This script installs all my core terminal tools, Zsh config, AUR apps, and more.
+This script updates the system, installs all of my core terminal tools, Zsh, AUR apps, and creates the swap file.
 
 ### Run it:
 
@@ -86,7 +87,7 @@ This script installs all my core terminal tools, Zsh config, AUR apps, and more.
 
 ## 3. Manual GUI Configuration
 
-Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings.
+Now that your apps and shell are set up, it's time to polish the system using KDE's System Settings GUI app. Everything should be findable via Get New button on the upper right hand side of the window or found by searching. 
 
 ### Krohnkite Tiling
 - Disable **Monocle Layout**
@@ -103,24 +104,24 @@ Go to `System Settings → Appearance & Style` and click the Get New button. Dow
 - **Window Decorations:** `WhiteSur-Dark`
 - Optional wallpaper: `Nordic Mountain`
 
-### Fonts (GUI Side)
-- Set your default font to your chosen Nerd Font (MesloLGL is a great pick)
+### Fonts
+- Set your default font to your chosen Nerd Font (I like FiraCode)
 - Adjust font hinting/anti-aliasing for your display
 
 ---
 
 ### Launch Zsh & Apply Your Dotfiles
-Once the script finishes running:
+Once the script finishes:
 
 Open your terminal. Zsh will launch by default. If Powerlevel10k prompts you with its configuration wizard, feel free to exit or skip — you’ll be applying your own settings in a moment.
 
-Clone your dotfiles repo (if not already):
+Clone the dotfiles repo (if not already):
 ```bash
 git clone https://github.com/YOURUSERNAME/dotfiles.git
 cd dotfiles
 ```
-Copy Your Configuration Files
-You can copy your Zsh configuration files using one of two methods:
+Copy the Configuration Files
+You can copy the Zsh configuration files using one of two methods:
 
 Option 1: Quick Copy in the Terminal
 ```bash
@@ -159,17 +160,27 @@ source ~/.zshrc
 - Add to the bottom right side of the desktop and shape accordingly
 
 ### Default Applications
-- Set **Brave** as your browser
+- Set **Brave** as the default browser
+- Set **Kwrite** as the default text editor
+- Set **Thunar** as the default file manager
 - Choose your terminal of choice (I use either Konsole or Alacritty)
+
+---
+
+### Dock
+- Add a second KDE panel that will function as a dock
+- Set **Position** to the bottom
+- Set **Width** to Fill Content
+- Set **Visibility** to Dodge Windows
+- Set **Opacity** to Transluscent
 
 ---
 
 ## Notes & Cleanup
 
-- After script completion, restart the terminal for Zsh changes to take effect.
-- `neofetch` is added to the top of your `.zshrc` file.
 - Use `yay` for installing additional AUR packages.
 - Either log out and back in, or reboot your computer just for good measure.
+- Have fun customizing it and making it your own!
 
 ---
 
