@@ -41,6 +41,7 @@ Manually download the following fonts from:
 
 Recommended Fonts:
 - FiraCode
+- Cousine
 - JetBrainsMono
 - SauceCodePro
 - Hack
